@@ -1,0 +1,412 @@
+1
+00:00:08,070 --> 00:00:12,490
+Hi, everyone. I am here today to show you how
+
+2
+00:00:12,490 --> 00:00:17,200
+an ending version of the Bikeshare Project could work.
+
+3
+00:00:17,200 --> 00:00:18,760
+And to do that,
+
+4
+00:00:18,760 --> 00:00:22,924
+we're going to look at two different examples because there are actually
+
+5
+00:00:22,924 --> 00:00:25,480
+multiple ways that you could build something that would
+
+6
+00:00:25,480 --> 00:00:29,155
+pass the rubric items specific for this project.
+
+7
+00:00:29,155 --> 00:00:32,268
+And, essentially, there's a template that's provided to you,
+
+8
+00:00:32,268 --> 00:00:35,125
+but you should feel free to change that template however you would like to.
+
+9
+00:00:35,125 --> 00:00:39,505
+So the function definitions and things that are provided in there,
+
+10
+00:00:39,505 --> 00:00:41,325
+you can use as they are,
+
+11
+00:00:41,325 --> 00:00:45,615
+but if something doesn't make sense to how you imagine you're ending project working,
+
+12
+00:00:45,615 --> 00:00:47,895
+feel free to change the inputs to it,
+
+13
+00:00:47,895 --> 00:00:49,485
+change what it returns.
+
+14
+00:00:49,485 --> 00:00:52,860
+The main thing is that you get an ending prototype,
+
+15
+00:00:52,860 --> 00:00:57,315
+an ending portfolio project working in a way where
+
+16
+00:00:57,315 --> 00:01:02,250
+it interacts with the user and provides the information that are asked within the rubric.
+
+17
+00:01:02,250 --> 00:01:06,315
+So with that, I'm going to take a look at two solutions.
+
+18
+00:01:06,315 --> 00:01:09,090
+So one is the solution.py file,
+
+19
+00:01:09,090 --> 00:01:11,475
+and the other is a bikeshare.py file,
+
+20
+00:01:11,475 --> 00:01:14,700
+and these are both correct solutions to what
+
+21
+00:01:14,700 --> 00:01:18,830
+a final project might look like for the Bikeshare Project.
+
+22
+00:01:18,830 --> 00:01:23,488
+If we were to run the bikeshare.py project,
+
+23
+00:01:23,488 --> 00:01:27,395
+it says, "Which city would you like to see data from?"
+
+24
+00:01:27,395 --> 00:01:29,990
+And let's say I say Chicago.
+
+25
+00:01:29,990 --> 00:01:33,080
+And then says, "Would you like to filter the data by month,
+
+26
+00:01:33,080 --> 00:01:35,180
+day, both, or not at all?"
+
+27
+00:01:35,180 --> 00:01:37,400
+Type none for no time filter.
+
+28
+00:01:37,400 --> 00:01:40,445
+You can see that this asks for each of these,
+
+29
+00:01:40,445 --> 00:01:44,120
+which wasn't specified in the original filter provided by
+
+30
+00:01:44,120 --> 00:01:48,740
+the template but this was an advanced feature that was provided in the solution.
+
+31
+00:01:48,740 --> 00:01:51,630
+So let's say I say both,
+
+32
+00:01:51,630 --> 00:01:52,920
+and it says "Which month?"
+
+33
+00:01:52,920 --> 00:01:54,750
+And I'll say February.
+
+34
+00:01:54,750 --> 00:01:58,200
+And then which day? Please give it as an integer.
+
+35
+00:01:58,200 --> 00:02:03,390
+Let's say 3. Cool. So it says the most popular hour
+
+36
+00:02:03,390 --> 00:02:08,745
+was 17 with a count of 723 when you did this filter.
+
+37
+00:02:08,745 --> 00:02:12,900
+The total duration was this, a count of this.
+
+38
+00:02:12,900 --> 00:02:14,655
+The average duration was here.
+
+39
+00:02:14,655 --> 00:02:16,636
+Again, the filter was both.
+
+40
+00:02:16,636 --> 00:02:18,600
+Calculated the most popular station,
+
+41
+00:02:18,600 --> 00:02:23,565
+so the most popular start station was here with a count of 122.
+
+42
+00:02:23,565 --> 00:02:26,190
+The most popular end station was here with a count of 110.
+
+43
+00:02:26,190 --> 00:02:27,845
+And, again, the filter was both.
+
+44
+00:02:27,845 --> 00:02:31,780
+So you can see that this is one potential solution for this,
+
+45
+00:02:31,780 --> 00:02:34,105
+where it's telling me how long it took,
+
+46
+00:02:34,105 --> 00:02:38,008
+and it gives me a whole bunch of other information.
+
+47
+00:02:38,008 --> 00:02:40,930
+It says, "Would you like to see individual trip data?"
+
+48
+00:02:40,930 --> 00:02:44,200
+I say yes, and it gives me some information back.
+
+49
+00:02:44,200 --> 00:02:46,360
+And then I can say no, and it says,
+
+50
+00:02:46,360 --> 00:02:47,950
+"Would you like to restart?" And I'll say no.
+
+51
+00:02:47,950 --> 00:02:51,970
+Cool. So that is one potential solution to this.
+
+52
+00:02:51,970 --> 00:02:55,942
+Let's take a look at another one in a different example.
+
+53
+00:02:55,942 --> 00:02:58,530
+It says, "Which one would you like to explore?"
+
+54
+00:02:58,530 --> 00:03:01,680
+So you can see they've built in this thing where it says,
+
+55
+00:03:01,680 --> 00:03:03,615
+"It looks like you want to hear about Washington.
+
+56
+00:03:03,615 --> 00:03:05,715
+If that's not true, restart the program."
+
+57
+00:03:05,715 --> 00:03:07,415
+So they built in a check,
+
+58
+00:03:07,415 --> 00:03:11,715
+where it says it sort of builds in this filter of what they're going to do.
+
+59
+00:03:11,715 --> 00:03:15,038
+You can see that that was sort of done in the end of that other example,
+
+60
+00:03:15,038 --> 00:03:16,695
+but both of those are acceptable.
+
+61
+00:03:16,695 --> 00:03:18,300
+"Would you like to filter by day,
+
+62
+00:03:18,300 --> 00:03:19,995
+month or not at all?"
+
+63
+00:03:19,995 --> 00:03:21,480
+So let's just say,
+
+64
+00:03:21,480 --> 00:03:23,385
+in this case, let's do month.
+
+65
+00:03:23,385 --> 00:03:25,275
+"Which month do you want?"
+
+66
+00:03:25,275 --> 00:03:27,150
+May.
+
+67
+00:03:27,150 --> 00:03:31,680
+Cool. And so you can see that this one started calculating all those statistics,
+
+68
+00:03:31,680 --> 00:03:34,605
+and you can see it was a little bit faster.
+
+69
+00:03:34,605 --> 00:03:39,300
+The way that it shows the information is a little bit different.
+
+70
+00:03:39,300 --> 00:03:40,465
+So you can see it says,
+
+71
+00:03:40,465 --> 00:03:42,120
+"What's the breakdown of users?"
+
+72
+00:03:42,120 --> 00:03:43,635
+And that looks like this,
+
+73
+00:03:43,635 --> 00:03:48,390
+and "What is the most popular station?"
+
+74
+00:03:48,390 --> 00:03:52,515
+So the most popular start and end station and here's the count.
+
+75
+00:03:52,515 --> 00:03:56,370
+You can see what's the total traveling time done,
+
+76
+00:03:56,370 --> 00:03:59,625
+and it gives it back in a little bit different format.
+
+77
+00:03:59,625 --> 00:04:02,089
+"What's the most popular hour of the day?"
+
+78
+00:04:02,089 --> 00:04:03,420
+It says 5.
+
+79
+00:04:03,420 --> 00:04:06,315
+"What's the most popular day for traveling?" It's Wednesday.
+
+80
+00:04:06,315 --> 00:04:11,880
+So you can see that this one actually gave you a little bit less up front in terms of
+
+81
+00:04:11,880 --> 00:04:13,950
+like how you're filtering and that was
+
+82
+00:04:13,950 --> 00:04:17,595
+because I only filtered by month and the other one filtered by both.
+
+83
+00:04:17,595 --> 00:04:19,048
+So it says, "Would you like to restart?"
+
+84
+00:04:19,048 --> 00:04:20,940
+Let's just do a restart on this one.
+
+85
+00:04:20,940 --> 00:04:24,270
+So it says, "Would you like to filter by which city?"
+
+86
+00:04:24,270 --> 00:04:28,440
+I'll say Chicago, and let's say I filter by day.
+
+87
+00:04:28,440 --> 00:04:31,665
+So here notice that it says you can filter by this
+
+88
+00:04:31,665 --> 00:04:35,445
+based on not a number but like on one of these letter values.
+
+89
+00:04:35,445 --> 00:04:37,438
+So I'm going to say Thursday,
+
+90
+00:04:37,438 --> 00:04:40,770
+and then it calculates the information for me based on that filter.
+
+91
+00:04:40,770 --> 00:04:46,380
+So again these are just two different ways to show the information at the end but,
+
+92
+00:04:46,380 --> 00:04:48,300
+in general, it needs to be interactive,
+
+93
+00:04:48,300 --> 00:04:52,845
+and it needs to show the statistics that are specified based on the rubric.
+
+94
+00:04:52,845 --> 00:04:55,490
+And those are really the only two restrictions.
+
+95
+00:04:55,490 --> 00:04:58,440
+So it should meet the rubric by giving
+
+96
+00:04:58,440 --> 00:05:02,378
+an interactive experience and calculating the statistics necessary,
+
+97
+00:05:02,378 --> 00:05:04,410
+but the template should just serve as a guide,
+
+98
+00:05:04,410 --> 00:05:07,110
+and you should feel free to change that however
+
+99
+00:05:07,110 --> 00:05:09,960
+you think you want your program to interact with the user.
+
+100
+00:05:09,960 --> 00:05:12,540
+Build in as much interactivity as you want to,
+
+101
+00:05:12,540 --> 00:05:15,945
+and you should feel comfortable being creative in your solution.
+
+102
+00:05:15,945 --> 00:05:18,495
+I hope this is helpful. Thanks for joining me.
+
+103
+00:05:18,495 --> 00:05:20,890
+Good luck with your projects.
+
