@@ -81,7 +81,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    filepath = Path(__file__)  # this not part of course, got tip from friend
+    filepath = Path('__file__')  
     data = {
         "W": Path(f"{filepath.parent}/washington.csv"),
         "C": Path(f"{filepath.parent}/chicago.csv"),
