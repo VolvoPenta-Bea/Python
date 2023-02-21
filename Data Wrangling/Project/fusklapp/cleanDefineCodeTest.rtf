@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fnil\fcharset0 Menlo-Italic;\f4\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red20\green24\blue33;\red255\green255\blue255;\red135\green136\blue117;
+\red245\green245\blue246;\red14\green32\blue46;\red210\green0\blue53;\red14\green110\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c10196\c12549\c17255;\cssrgb\c100000\c100000\c100000;\cssrgb\c60000\c60000\c53333;
+\cssrgb\c96863\c96863\c97255;\cssrgb\c5882\c16863\c23922;\cssrgb\c86667\c6667\c26667;\cssrgb\c0\c50196\c50196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29160\viewh17760\viewkind0
+\deftab720
+\pard\pardeftab720\sa100\partightenfactor0
+
+\f0\b\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Step 1: Define\
+\pard\pardeftab720\sa300\partightenfactor0
+
+\f1\b0 \cf2 Defining uses verbs. It's a call to action to fix the issue we observed:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\fs24 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Remove 'bb' before every animal name\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Replace ! with . in body weight and brain columns\cb1 \
+\pard\pardeftab720\sa100\partightenfactor0
+
+\f0\b\fs32 \cf2 \cb3 Step 2: Code\
+\pard\pardeftab720\sa300\partightenfactor0
+
+\f1\b0 \cf2 This is actually doing the task listed in the Define step. For this course, we will use the\'a0
+\f2\i pandas
+\f1\i0 \'a0library.\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i\fs26 \cf4 \cb5 \strokec4 \uc0\u8237 ## Remove 'bb' before every animal name
+\f4\i0 \cf6 \cb5 \strokec6 \uc0\u8236 \
+df[\cf7 \cb5 \strokec7 'Animal'\cf6 \cb5 \strokec6 ] = df[\cf7 \cb5 \strokec7 'Animal'\cf6 \cb5 \strokec6 ].str[\cf8 \cb5 \strokec8 2\cf6 \cb5 \strokec6 :]\uc0\u8236 \
+\uc0\u8236 \
+
+\f3\i \cf4 \cb5 \strokec4 ## Replace ! with . in body weight and brain columns
+\f4\i0 \cf6 \cb5 \strokec6 \uc0\u8236 \
+df[\cf7 \cb5 \strokec7 'Body Weight (kg)'\cf6 \cb5 \strokec6 ] = df[\cf7 \cb5 \strokec7 'Body Weight (kg)'\cf6 \cb5 \strokec6 ].str.replace(\cf7 \cb5 \strokec7 '!'\cf6 \cb5 \strokec6 ,\cf7 \cb5 \strokec7 '.'\cf6 \cb5 \strokec6 )\uc0\u8236 \
+df[\cf7 \cb5 \strokec7 'Brain weight (g)'\cf6 \cb5 \strokec6 ] = df[\cf7 \cb5 \strokec7 'Brain weight (g)'\cf6 \cb5 \strokec6 ].str.replace(\cf7 \cb5 \strokec7 '!'\cf6 \cb5 \strokec6 ,\cf7 \cb5 \strokec7 '.'\cf6 \cb5 \strokec6 )\uc0\u8236 \
+\pard\pardeftab720\sa100\partightenfactor0
+
+\f0\b\fs32 \cf2 \cb3 \strokec2 \uc0\u8236 Step 3: Test\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 The testing step is about making sure our code worked. The simplest way to do so is to visually assess your data set. That works for this data set because it's pretty small but we can also use programmatic assessments like search statements and\'a0
+\f2\i pandas
+\f1\i0 \'a0built in testing methods.\
+}
